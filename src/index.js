@@ -3,17 +3,18 @@ import createCard from "./createCard.js";
 
 const CARDS = document.querySelector(".cards");
 
-function displayHTML() {
+function displayHTML(restos) {
     let html = "";
 
-	for (let i = 0; i < resto.length; i++) {
+	for (let i = 0; i < restos.length; i++) {
 		html += createCard(resto[i]);
 	}
 
 	return html;
-}
+};
 
 CARDS.innerHTML = displayHTML(resto);
+
 
 const rectos = document.querySelectorAll(".recto");
 const versos = document.querySelectorAll(".verso");
@@ -32,21 +33,24 @@ versos[i].addEventListener("click", function () {
 });
 
 
-// const SELECT = document.querySelector(".select");
+const SELECT = document.querySelector(".select");
 
-// SELECT.addEventListener("change", () => {
-//     let restoFilter = resto.filter(
-//         (resto) => resto.type === SELECT.value
-//     );
+
+
+
+SELECT.addEventListener("change", () => {
+    let restoFilter = resto.filter(
+        (resto) => resto.value === SELECT.value
+    );
     
-//     if (SELECT.value === "All" ) {
-//             restoFilter = resto;
-//     }
-//     CARDS.restoHTML = displayHTML(restoFilter);
+    if (SELECT.value === "all") {
+        restoFilter = resto;
 
-// });
-
-
-
+    } else if (SELECT.value === "french") {
+        
+        restoFilter = resto.filter; //restoFilter = SELECT.value affiche plusieurs restaurants dont 2 qui ne possèdent pas "french" en tant que valeur de clé
+    }
+    CARDS.innerHTML = displayHTML(restoFilter);
+});
 
 

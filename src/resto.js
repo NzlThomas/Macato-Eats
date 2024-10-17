@@ -8,6 +8,7 @@ const resto = [
         address: "8 Av. Marie-Louise Delwaulle, 59000 Lille",
         distance: "5mn à pied du campus",
         budget: "10 - 20€",
+        value: ["all", "french", "low-budget"]
     },
 
     {
@@ -19,6 +20,7 @@ const resto = [
         address: "107 Av. de Bretagne, 59000 Lille",
         distance: "2mn à pied du campus",
         budget: "20 - 30€",
+        value: ["all", "french"]
     },
 
     {
@@ -30,6 +32,7 @@ const resto = [
         address: "Rue Hegel, 59160 Lille",
         distance: "7mn à pied du campus",
         budget: "20 - 30€",
+        value: ["all", "french"]
     },
 
     {
@@ -41,6 +44,7 @@ const resto = [
         address: "142 Av. de Bretagne, 59000 Lille",
         distance: "1mn à pied du campus",
         budget: "10 - 20€",
+        value: ["all", "low-budget"],
     },
 
     {
@@ -52,17 +56,19 @@ const resto = [
         address: "166 Bis Avenue de Bretagne, 59000 Lille",
         distance: "2min à pied du campus",
         budget: "10 - 20€",
+        value: ["all", "italian"]
     },
 
     {
         name: "La Famille",
         type: "Cuisine Française",
         service: "Sur place ou à emporter",
-        img:"../public/images/famille-modified.png",
+        img: "../public/images/famille-modified.png",
         etoiles: "4,5/5 ⭐⭐⭐⭐",
         address: "166 Bis Av. de Bretagne, 59000 Lille",
         distance: "3min à pied du campus",
         budget: "10 - 20€",
+        value: ["all", "french","low-budget"]
     },
 
     {
@@ -74,6 +80,7 @@ const resto = [
         address: "175 Av. de Bretagne, 59000 Lille",
         distance: "2min à pied du campus",
         budget: "20 - 30€",
+        value: ["all", "french"]
     },
 
     {
@@ -85,6 +92,7 @@ const resto = [
         address: "168 Av. de Bretagne, 59000 Lille",
         distance: "3min à pied du campus",
         budget: "20 - 30€",
+        value: ["all","french"]
     },
 
     {
@@ -96,6 +104,7 @@ const resto = [
         address: "289 Av. de Dunkerque, 59160 Lille",
         distance: "10min à pied du campus",
         budget: "10 - 20€",
+        value: ["all", "asian", "low-budget"]
     },
 ];
 

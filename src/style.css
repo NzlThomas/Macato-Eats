@@ -38,6 +38,21 @@ header {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
+header img {
+    transition:all 0.3s ease;
+    animation: neon-blink 1.5s infinite alternate;
+}
+@keyframes neon-blink {
+    0% {
+            filter: brightness(1);
+            box-shadow: 0 0 20px var(--card-color), 0 0 40px,var(--card-color) 0 0 60px var(--card-color);
+        }
+    
+    50% {
+            filter: brightness(1.5);
+            box-shadow: 0 0 40px var(--card-color) 0 0 80px var(--card-color) 0 100px var(--card-color);
+        }
+}
 
 h1 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -140,6 +155,7 @@ main{
     display: flex;
     text-align: center;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .image {
@@ -169,6 +185,7 @@ button {
 }
 footer img {
     width:8%;
+    padding-bottom: 1em;
 }
 
 footer {
@@ -176,6 +193,14 @@ footer {
     display: flex;
     justify-content: space-around;
     padding:1rem;
+    flex-wrap: wrap;
+    color: var(--card-shadow);
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
 }
 
 select {
@@ -196,12 +221,17 @@ select {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 3rem;
         padding-bottom: 20%;
         background-position: center;
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
     }
+
+    header img{
+        width: 30%;
+        margin-top:5em;
+    }
+
         h1 {
             width: 30%;
             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -215,7 +245,10 @@ select {
         }
 
     #concept{
-        max-width: 800px;}
+        max-width: 60%;
+        padding : 1em 2em;
+        font-size: 1.2em;
+    }
     
     footer img {
         width: 3%;

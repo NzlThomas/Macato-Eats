@@ -3,6 +3,7 @@
     --background-color: #CAE5FF;
     --card-color: #ac5dc7;
     --card-shadow: #813b99;
+    --footer:#F1ECBA;
 }
 
 * {
@@ -39,8 +40,8 @@ header {
     border-bottom-right-radius: 1rem;
 }
 header img {
-    transition:all 0.3s ease;
-    animation: neon-blink 1.5s infinite alternate;
+    transition:all 0.5s ease;
+    animation: neon-blink 0.4s infinite alternate;
 }
 @keyframes neon-blink {
     0% {
@@ -151,6 +152,7 @@ main{
     align-items: center;
 }
 
+
 .texte {
     display: flex;
     text-align: center;
@@ -174,6 +176,13 @@ button {
     font-weight: bold;
     border-style: none;
     font-size: 0.7em;
+    transition: background-color 0.5s;
+}
+
+button:hover{
+    color: white;
+    background-color: var(--card-shadow);
+
 }
 
 .recto-flip {
@@ -189,7 +198,7 @@ footer img {
 }
 
 footer {
-    background-color:#F1ECBA;
+    background-color:var(--footer);
     display: flex;
     justify-content: space-around;
     padding:1rem;
@@ -213,6 +222,16 @@ select {
     border-radius: 20px;
     color: var(--card-shadow);
     font-size: 1em;
+}
+
+a {
+    color: white;
+    transition: color 0.1s;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: var(--card-shadow);
 }
 
 /*RESPONSIVE DESKTOP*/
@@ -255,14 +274,26 @@ select {
     }
 
     .card{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
         min-width: 40%;
         max-width: 40%;
         margin-left: 1em;
         margin-right: 0;
+        min-height: 19rem;
+        max-height: 19rem;
+        
     }
 
     .recto {
         justify-content: space-around;
+        font-size: 1.2em;
+    }
+
+    .verso {
+        font-size: 1.2em;
     }
 
     .cards{
@@ -270,6 +301,7 @@ select {
         flex-wrap: wrap;
         justify-content: center;
         gap:4em;
+        width:100%;
     }
 
     .image img{
@@ -278,13 +310,13 @@ select {
         margin-bottom: 1rem;
     }
 
-    .verso{
-        text-align: center;
-    }
-
     select{
         width:25rem;
+    transition: background-color 0.5s;
     }
-}
-    
 
+    select:hover{
+        color: white;
+        background-color: var(--card-shadow);
+}
+}

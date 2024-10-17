@@ -1,7 +1,6 @@
 function createCard(restaurant) {
     let addCard = `
     <div class="card">
-            
             <section class="recto">
                 <div class="texte">
                 <h3>
@@ -13,7 +12,7 @@ function createCard(restaurant) {
                 <div class="image">
                     <img src=${restaurant.img}>
                     <button class="button">En savoir plus</button>
-                    </div>
+                </div>
             </section>
 
             <section class ="verso verso-flip">
@@ -23,6 +22,7 @@ function createCard(restaurant) {
                 <p>${restaurant.address}</p>
                 <p>${restaurant.distance}</p>   
                 <p>Budget :${restaurant.budget}</p>
+                <a href=${restaurant.siteweb}>Visitez le site web</a>
             </section>
         </div>`;
         

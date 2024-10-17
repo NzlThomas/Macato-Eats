@@ -8,6 +8,8 @@ const resto = [
         address: "8 Av. Marie-Louise Delwaulle, 59000 Lille",
         distance: "5mn à pied du campus",
         budget: "10 - 20€",
+        siteweb : "https://bombora.fr/",
+        value: ["all", "french", "low-budget"]
     },
 
     {
@@ -19,6 +21,8 @@ const resto = [
         address: "107 Av. de Bretagne, 59000 Lille",
         distance: "2mn à pied du campus",
         budget: "20 - 30€",
+        siteweb : "https://www.lapromenaderestaurant.fr/",
+        value: ["all", "french"]
     },
 
     {
@@ -30,6 +34,8 @@ const resto = [
         address: "Rue Hegel, 59160 Lille",
         distance: "7mn à pied du campus",
         budget: "20 - 30€",
+        siteweb : "https://www.kokpiraat.fr/",
+        value: ["all", "french"]
     },
 
     {
@@ -41,6 +47,8 @@ const resto = [
         address: "142 Av. de Bretagne, 59000 Lille",
         distance: "1mn à pied du campus",
         budget: "10 - 20€",
+        siteweb : "https://pick-it-up.fr/",
+        value: ["all", "low-budget"],
     },
 
     {
@@ -52,17 +60,21 @@ const resto = [
         address: "166 Bis Avenue de Bretagne, 59000 Lille",
         distance: "2min à pied du campus",
         budget: "10 - 20€",
+        siteweb : "https://ciccio-lille.fr/",
+        value: ["all", "italian"]
     },
 
     {
         name: "La Famille",
         type: "Cuisine Française",
         service: "Sur place ou à emporter",
-        img:"../public/images/famille-modified.png",
+        img: "../public/images/famille-modified.png",
         etoiles: "4,5/5 ⭐⭐⭐⭐",
         address: "166 Bis Av. de Bretagne, 59000 Lille",
         distance: "3min à pied du campus",
         budget: "10 - 20€",
+        siteweb : "https://www.lf.fr/",
+        value: ["all", "french","low-budget"]
     },
 
     {
@@ -74,6 +86,8 @@ const resto = [
         address: "175 Av. de Bretagne, 59000 Lille",
         distance: "2min à pied du campus",
         budget: "20 - 30€",
+        siteweb : "https://www.alexens.com/",
+        value: ["all", "french"]
     },
 
     {
@@ -85,8 +99,9 @@ const resto = [
         address: "168 Av. de Bretagne, 59000 Lille",
         distance: "3min à pied du campus",
         budget: "20 - 30€",
+        siteweb: "https://leswitchoubien.fr/fr",
+        value: ["all","french"]
     },
-
     {
         name: "Les Saveurs d'Asie Lomme",
         type: "Cuisine asiatique",
@@ -96,6 +111,8 @@ const resto = [
         address: "289 Av. de Dunkerque, 59160 Lille",
         distance: "10min à pied du campus",
         budget: "10 - 20€",
+        siteweb:"https://lacarte.menu/restaurants/lomme/les-saveurs-dasie-lomme",
+        value: ["all", "asian", "low-budget"]
     },
 ];
 

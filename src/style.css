@@ -1,0 +1,257 @@
+:root {
+    --main-color: white;
+    --background-color: #CAE5FF;
+    --card-color: #ac5dc7;
+    --card-shadow: #813b99;
+}
+
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body {
+    font-family: "Theinhardt";
+    margin: 0;
+    background-color:var(--background-color);
+}
+
+@font-face {
+    font-family: "Bayshore";
+    src: url(../public/fonts/Bayshore/OTF/Bayshore.otf);
+}
+@font-face {
+    font-family: "Theinhardt";
+    src: url(../public/fonts/Theinhardt-Regular.otf);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 20%;
+    background-image: url(../public/images/top-view-food-frame-with-purple-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    background-color: var(--main-color);
+    color: #985f99;
+    font-size: 1em;
+    margin-top: 2em;
+    text-align: center;
+}
+
+#concept{
+    width: 90%;
+    text-align: left;
+    font-size: 1em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    padding: 1rem;
+    background-color: var(--card-color);
+    color: var(--main-color);
+}
+
+
+.recto p {
+    margin: 4px;
+}
+
+.image img {
+    width: 80%;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 3.5rem;
+    }
+
+
+h2{
+    background-color: var(--card-color);
+    border-radius: 1rem;
+    width: 90%;
+    color: white;
+    text-align: center;
+    border-bottom: solid var(--card-shadow) 0.2em;
+    border-right: solid var(--card-shadow) 0.2em;
+}
+
+
+
+.card-title {
+    font-size: 1.5em;
+    background-color: var(--card-color);
+    padding: 0.5em;
+    border-radius: 50px;
+}
+
+.card-paragraph {
+    margin: 0;
+}
+
+
+/* GRID ET FLEX */
+
+main{
+    margin: 2rem 0;
+    padding: 2rem 0;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card{
+    background-color: var(--card-color);
+    border-radius: 30px;
+    min-height: 90%;
+    max-height: 90%;
+    min-width: 90%;
+    max-width: 90%;
+    border-bottom: solid var(--card-shadow) 0.5em;
+    border-right: solid var(--card-shadow) 0.5em;
+    padding: 1em;
+    color: white;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.recto {
+    display: flex;
+    align-items: center;
+}
+
+.texte {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-self: first baseline; 
+    align-items: center;
+}
+
+button {
+    background-color:white;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    color: var(--card-shadow);
+    font-weight: bold;
+    border-style: none;
+    font-size: 0.7em;
+}
+
+.recto-flip {
+    display: none;
+}
+
+.verso-flip {
+    display: none;
+}
+footer img {
+    width:8%;
+}
+
+footer {
+    background-color:#F1ECBA;
+    display: flex;
+    justify-content: space-around;
+    padding:1rem;
+}
+
+select {
+    width: 20rem;
+    height: 2rem;
+    text-align: center;
+    margin-bottom: 2em;
+    background-color: white;
+    border: solid 0.2em var(--card-shadow);
+    border-radius: 20px;
+    color: var(--card-shadow);
+    font-size: 1em;
+}
+
+/*RESPONSIVE DESKTOP*/
+@media screen and (min-width: 1200px){
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        padding-bottom: 20%;
+        background-position: center;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+        h1 {
+            width: 30%;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 0.5em 1em;
+            border-radius: 30px;
+            background-color: var(--main-color);
+            color: #985f99;
+            font-size: 1.5em;
+            margin-top: 2em;
+            text-align: center;
+        }
+
+    #concept{
+        max-width: 800px;}
+    
+    footer img {
+        width: 3%;
+    }
+
+    .card{
+        min-width: 40%;
+        max-width: 40%;
+        margin-left: 1em;
+        margin-right: 0;
+    }
+
+    .recto {
+        justify-content: space-around;
+    }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:4em;
+    }
+
+    .image img{
+        width: 70%; 
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .verso{
+        text-align: center;
+    }
+
+    select{
+        width:25rem;
+    }
+}
+    
+

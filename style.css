@@ -19,11 +19,11 @@ body {
 
 @font-face {
     font-family: "Bayshore";
-    src: url(../public/fonts/Bayshore/OTF/Bayshore.otf);
+    src: url(public/fonts/Bayshore/OTF/Bayshore.otf);
 }
 @font-face {
     font-family: "Theinhardt";
-    src: url(../public/fonts/Theinhardt-Regular.otf);
+    src: url(public/fonts/Theinhardt-Regular.otf);
 }
 
 header {
@@ -32,7 +32,7 @@ header {
     align-items: center;
     gap: 3rem;
     padding-bottom: 20%;
-    background-image: url(../public/images/top-view-food-frame-with-purple-background.jpg);
+    background-image: url(public/images/top-view-food-frame-with-purple-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
